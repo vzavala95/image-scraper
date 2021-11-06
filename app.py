@@ -11,7 +11,6 @@ import re
 
 app = Flask(__name__)
 
-
 def wikimage_scraper(query):
     query = query.replace(" ", "_")
     url = 'https://en.wikipedia.org/wiki/' + query
@@ -38,3 +37,5 @@ def search():
 def get_wikimage(query):
     img = wikimage_scraper(query)
     return jsonify(img)
+
+# all done
