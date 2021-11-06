@@ -38,4 +38,4 @@ def get_wikimage(query):
     img = wikimage_scraper(query)
     return jsonify(img)
 
-# all done
+# all done!
